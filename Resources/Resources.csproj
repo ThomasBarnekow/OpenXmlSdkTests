@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="JetBrains.Annotations" Version="2024.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="HelloWorld.docx" />
+      <EmbeddedResource Include="HelloWorld.docx" />
+      <None Remove="HelloWorldFlatOpc.xml" />
+      <EmbeddedResource Include="HelloWorldFlatOpc.xml" />
+    </ItemGroup>
+
+</Project>
